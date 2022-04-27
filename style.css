@@ -1,0 +1,12 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.first-page {
+  display: grid;
+  background-image: url(/img/Background\ drawing.png);
+  background-color: #5b4848;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
