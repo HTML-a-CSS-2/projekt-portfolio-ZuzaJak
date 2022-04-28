@@ -2,10 +2,49 @@ html,
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
+html h1 {
+  font-size: 35px;
+}
+@media screen and (min-width: 992px)
+{
 .first-page {
-  display: grid;
+  color: #FFFFFF;
   background-image: url(/img/drawing1.png);
   background-color: #5B4848;
   background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 30% 70%;
+  grid-template-areas: 
+    "main-left navigation"
+    "main-left main-right";
+}
+.first-page__nav {
+  grid-area: navigation;
+  display: flex;
+  justify-content: flex-end;
+}
+.first-page__block--left {
+  grid-area: main-left;
+}
+.first-page__block--right {
+  grid-area: main-right;
+}
+.first-page__nav ul{
+  display: flex;
+  flex-direction: row;
+}
+.first-page__nav li {
+  padding: 20px;
+  list-style: none;
+}
+.first-page__nav a {
+  color: #FFFFFF;
+}
+.first-page__block--left img {
+  max-height: 100%;
+}
 }
