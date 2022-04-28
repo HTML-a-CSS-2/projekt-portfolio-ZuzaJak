@@ -5,8 +5,7 @@ body {
 }
 .first-page {
   display: grid;
-  background-image: url(/img/Background\ drawing.png);
-  background-color: #5b4848;
+  background-image: url(/img/drawing1.png);
+  background-color: #5B4848;
   background-repeat: no-repeat;
-  opacity: 0.5;
 }
