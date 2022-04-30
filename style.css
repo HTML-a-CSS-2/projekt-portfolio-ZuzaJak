@@ -4,47 +4,70 @@ body {
   padding: 0;
   font-family: 'Roboto', sans-serif;
 }
-html h1 {
-  font-size: 35px;
+h1 {
+  font-size: 40px;
 }
-@media screen and (min-width: 992px)
-{
-.first-page {
-  color: #FFFFFF;
-  background-image: url(/img/drawing1.png);
-  background-color: #5B4848;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 30% 70%;
-  grid-template-areas: 
-    "main-left navigation"
-    "main-left main-right";
+.button {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
-.first-page__nav {
-  grid-area: navigation;
-  display: flex;
-  justify-content: flex-end;
-}
-.first-page__block--left {
-  grid-area: main-left;
-}
-.first-page__block--right {
-  grid-area: main-right;
-}
-.first-page__nav ul{
-  display: flex;
-  flex-direction: row;
-}
-.first-page__nav li {
+.button a {
+  background-color: #6be831;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #ffffff;
   padding: 20px;
-  list-style: none;
 }
-.first-page__nav a {
-  color: #FFFFFF;
+/* CSS pro šířku do 576 px */
+.first-page {
+  color: #ffffff;
+  background-color: #5b4848;
 }
-.first-page__block--left img {
-  max-height: 100%;
+/* CSS pro šířku 576 - 768 px */
+@media screen and (min-width: 576px) {
 }
+/* CSS pro šířku 768 - 992 px */
+@media screen and (min-width: 768px) {
+}
+/* CSS pro šířku 992 - 1200 */
+@media screen and (min-width: 992px) {
+  .first-page {
+    background-image: url(/img/drawing1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30% 70%;
+    grid-template-areas:
+      'main-left navigation'
+      'main-left main-right';
+  }
+  .first-page__nav {
+    grid-area: navigation;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .first-page__block--left {
+    grid-area: main-left;
+  }
+  .first-page__block--right {
+    grid-area: main-right;
+  }
+  .first-page__nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+  .first-page__nav li {
+    padding: 20px;
+    list-style: none;
+  }
+  .first-page__nav a {
+    color: #ffffff;
+  }
+  .first-page__block--left img {
+    max-height: 100%;
+  }
+}
+/* CSS pro šířku nad 1200 px */
+@media screen and (min-width: 1200px) {
 }
