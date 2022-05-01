@@ -27,6 +27,7 @@ h3 {
 /* Šířka do 576 px */
 .first-page {
   color: #ffffff;
+  background-color: #5b4848;
 }
 /* Šířka 576 - 768 px */
 @media screen and (min-width: 576px) {
@@ -37,7 +38,7 @@ h3 {
 /* Šířka 992 - 1200 */
 @media screen and (min-width: 992px) {
   .first-page {
-    background-image: url(/img/Jeremy-Irons-2-29\ 1.png);
+    background-image: url(img/drawing1.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: grid;
