@@ -116,6 +116,20 @@ h3 {
   .third-page__block--right img {
     max-width: 100%;
   }
+  .fourth-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr;
+    grid-template-areas: 'fourth-top' 'fourth-bottom';
+  }
+  .fourth-page__block--top {
+    grid-area: fourth-top;
+    align-self: end;
+    text-align: center;
+  }
+  .fourth-page__block--bottom {
+    grid-area: fourth-bottom;
+  }
 }
 /* Šířka nad 1200 px */
 @media screen and (min-width: 1200px) {
