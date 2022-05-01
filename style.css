@@ -7,6 +7,12 @@ body {
 h1 {
   font-size: 40px;
 }
+h2 {
+  font-size: 35px;
+}
+h3 {
+  font-size: 30px;
+}
 .button {
   margin-top: 40px;
   margin-bottom: 40px;
@@ -18,29 +24,29 @@ h1 {
   color: #ffffff;
   padding: 20px;
 }
-/* CSS pro šířku do 576 px */
+/* Šířka do 576 px */
 .first-page {
   color: #ffffff;
   background-color: #5b4848;
 }
-/* CSS pro šířku 576 - 768 px */
+/* Šířka 576 - 768 px */
 @media screen and (min-width: 576px) {
 }
-/* CSS pro šířku 768 - 992 px */
+/* Šířka 768 - 992 px */
 @media screen and (min-width: 768px) {
 }
-/* CSS pro šířku 992 - 1200 */
+/* Šířka 992 - 1200 */
 @media screen and (min-width: 992px) {
   .first-page {
     background-image: url(/img/drawing1.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 30% 70%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
     grid-template-areas:
-      'main-left navigation'
-      'main-left main-right';
+      'first-left navigation'
+      'first-left first-right';
   }
   .first-page__nav {
     grid-area: navigation;
@@ -48,10 +54,10 @@ h1 {
     justify-content: flex-end;
   }
   .first-page__block--left {
-    grid-area: main-left;
+    grid-area: first-left;
   }
   .first-page__block--right {
-    grid-area: main-right;
+    grid-area: first-right;
   }
   .first-page__nav ul {
     display: flex;
@@ -67,7 +73,50 @@ h1 {
   .first-page__block--left img {
     max-height: 100%;
   }
+  .second-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 4fr;
+    grid-template-areas:
+      'header header header'
+      'second-left second-middle second-right';
+  }
+  .second-page__header {
+    grid-area: header;
+    text-align: center;
+  }
+  .second-page__block {
+    padding: 30px;
+  }
+  .second-page__block--left {
+    grid-area: second-left;
+  }
+  .second-page__block--middle {
+    grid-area: second-middle;
+  }
+  .second-page__block--right {
+    grid-area: second-right;
+  }
+  .third-page {
+    background-color: #5b4848;
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'third-left third-right';
+  }
+  .third-page__block--left {
+    grid-area: third-left;
+    padding: 30px;
+    align-self: center;
+  }
+  .third-page__block--right {
+    grid-area: third-right;
+  }
+  .third-page__block--right img {
+    max-width: 100%;
+  }
 }
-/* CSS pro šířku nad 1200 px */
+/* Šířka nad 1200 px */
 @media screen and (min-width: 1200px) {
 }
