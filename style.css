@@ -47,6 +47,7 @@ h3 {
     grid-template-areas:
       'first-left navigation'
       'first-left first-right';
+    height: 100vh;
   }
   .first-page__nav {
     grid-area: navigation;
