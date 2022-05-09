@@ -23,6 +23,10 @@ h3 {
   text-decoration: none;
   color: #ffffff;
   padding: 20px;
+  &:hover {
+    background-color: #62d42d;
+    transition: 0.3s ease-in;
+  }
 }
 /* Šířka do 576 px */
 .first-page {

@@ -30,6 +30,10 @@ h3 {
   color: #ffffff;
   padding: 20px;
 }
+.button a:hover {
+  background-color: #62d42d;
+  transition: 0.3s ease-in;
+}
 
 /* Šířka do 576 px */
 .first-page {
