@@ -10,6 +10,11 @@ $buttonMarginBottom: 40px;
 $bodyMargin: 0px;
 $bodyPadding: 0px;
 $fontFamily: 'Roboto', sans-serif;
+/* mixins */
+@mixin navigationFlex() {
+  display: flex;
+  justify-content: flex-end;
+}
 html,
 body {
   margin: $bodyMargin;
@@ -72,8 +77,7 @@ h3 {
   }
   .first-page__nav {
     grid-area: navigation;
-    display: flex;
-    justify-content: flex-end;
+    @include navigationFlex();
   }
   .first-page__logo {
     grid-area: logo;
