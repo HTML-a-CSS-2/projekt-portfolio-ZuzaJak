@@ -18,6 +18,7 @@ h3 {
   font-size: 30px;
 }
 
+/* proměnné */
 .button {
   margin-top: 40px;
   margin-bottom: 40px;
@@ -35,6 +36,7 @@ h3 {
   max-width: -moz-max-content;
   max-width: max-content;
   padding: 20px;
+  /* zanoření */
 }
 .button a:hover {
   background-color: #62d42d;
