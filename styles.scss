@@ -150,17 +150,20 @@ h3 {
   }
   .fourth-page {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 4fr;
-    grid-template-areas: 'fourth-top' 'fourth-bottom';
+    grid-template-areas: 'fourth-top fourth-top' 'fourth-left fourth-right';
   }
   .fourth-page__block--top {
     grid-area: fourth-top;
     align-self: end;
     text-align: center;
   }
-  .fourth-page__block--bottom {
-    grid-area: fourth-bottom;
+  .fourth-page__block--left {
+    grid-area: fourth-left;
+  }
+  .fourth-page__block--right {
+    grid-area: fourth-right;
   }
 }
 /* Šířka nad 1200 px */

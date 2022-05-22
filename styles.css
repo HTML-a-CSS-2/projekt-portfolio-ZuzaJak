@@ -3,7 +3,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1 {
@@ -60,7 +60,7 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 1fr 0.2fr;
     grid-template-rows: 1fr 3fr;
-    grid-template-areas: "first-left navigation logo" "first-left first-right first-right";
+    grid-template-areas: 'first-left navigation logo' 'first-left first-right first-right';
     height: 100vh;
   }
 
@@ -105,7 +105,7 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 4fr;
-    grid-template-areas: "header header header" "second-left second-middle second-right";
+    grid-template-areas: 'header header header' 'second-left second-middle second-right';
     /* zanoření pro BEM */
   }
   .second-page__header {
@@ -135,7 +135,7 @@ h3 {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas: "third-left third-right";
+    grid-template-areas: 'third-left third-right';
   }
 
   .third-page__block--left {
@@ -154,19 +154,20 @@ h3 {
 
   .fourth-page {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 4fr;
-    grid-template-areas: "fourth-top" "fourth-bottom";
+    grid-template-areas: 'fourth-top fourth-top' 'fourth-left fourth-right';
   }
-
   .fourth-page__block--top {
     grid-area: fourth-top;
     align-self: end;
     text-align: center;
   }
-
-  .fourth-page__block--bottom {
-    grid-area: fourth-bottom;
+  .fourth-page__block--left {
+    grid-area: fourth-left;
+  }
+  .fourth-page__block--right {
+    grid-area: fourth-right;
   }
 }
-/* Šířka nad 1200 px *//*# sourceMappingURL=styles.css.map */
+/* Šířka nad 1200 px */ /*# sourceMappingURL=styles.css.map */
